@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tuesport"
+    tools:context="com.tuespot.roundedcorner.Mainlogin">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="225dp"
+            android:paddingTop="50dp"
+            android:layout_gravity="center">
+            <ImageView
+
+                android:layout_width="130dp"
+                android:layout_height="120dp"
+                android:background="@drawable/logoschool"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <Button
+                android:layout_marginTop="40dp"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:text="Student Log In"
+                android:id="@+id/studentlogin"
+                android:textColor="#f24e4c"
+                android:textSize="20dp"
+                android:background="@drawable/button_bg_stroke"/>
+
+            <Button
+                android:layout_marginTop="50dp"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:text="staff LOG IN"
+                android:id="@+id/stafflogin"
+                android:textColor="#f24e4c"
+                android:textSize="20dp"
+                android:background="@drawable/button_bg_stroke"/>
+            <Button
+                android:layout_marginTop="50dp"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:text="Center LOG IN"
+                android:id="@+id/centerlogin"
+                android:textColor="#f24e4c"
+                android:textSize="20dp"
+                android:background="@drawable/button_bg_stroke"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

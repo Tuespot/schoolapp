@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tuespot.roundedcorner">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Mainlogin" />
+        <activity android:name=".Studentlogin" />
+        <activity android:name=".Stafflogin" />
+        <activity android:name=".Studentregister" />
+        <activity android:name=".Staffregister" />
+        <activity
+            android:name=".Studenthome"
+            android:label="@string/title_activity_studenthome"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Staffhome"
+            android:label="@string/title_activity_staffhome"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Centerlogin" />
+        <activity
+            android:name=".Centerhome"
+            android:label="@string/title_activity_centerhome"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Downloadresult" />
+        <activity android:name=".Enquiry" />
+        <activity android:name=".Staffresult" />
+        <activity android:name=".Generatepayment" />
+        <activity android:name=".Viewadmission" />
+        <activity android:name=".Viewadmissionstudent"></activity>
+    </application>
+
+</manifest>

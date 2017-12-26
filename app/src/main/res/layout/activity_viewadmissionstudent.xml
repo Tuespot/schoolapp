@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tuespot.roundedcorner.Viewadmissionstudent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/coverpic"
+            android:background="@drawable/amanlogo"/>
+
+    </LinearLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:src="@drawable/rani"
+        android:layout_gravity="center"
+        android:layout_marginTop="-70dp"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#f24a47"
+                    android:textColor="#f24a47"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#ffffff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Course :-"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#f24a47"
+                    android:textColor="#f24a47"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#ffffff"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="-30dp"
+                    android:text=" Computer Engg."/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="5px"
+                    android:layout_marginTop="-7dp"
+                    android:background="@drawable/proline"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#f24a47"
+                    android:textColor="#f24a47"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#ffffff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Name :- "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#f24a47"
+                    android:textColor="#f24a47"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#ffffff"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="-30dp"
+                    android:text=" Aman Handa"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="5px"
+                    android:layout_marginTop="-7dp"
+                    android:background="@drawable/proline"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#f24a47"
+                    android:textColor="#f24a47"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#ffffff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Father Name :- "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#f24a47"
+                    android:textColor="#f24a47"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#ffffff"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="-30dp"
+                    android:text=" Des Raj"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="5px"
+                    android:layout_marginTop="-7dp"
+                    android:background="@drawable/proline"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#f24a47"
+                    android:textColor="#f24a47"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#ffffff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Year :- "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#f24a47"
+                    android:textColor="#f24a47"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#ffffff"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="-30dp"
+                    android:text=" 2015-2017"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="5px"
+                    android:layout_marginTop="-7dp"
+                    android:background="@drawable/proline"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#f24a47"
+                    android:textColor="#f24a47"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#ffffff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="D.O.B :- "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#f24a47"
+                    android:textColor="#f24a47"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#ffffff"
+                    android:layout_marginLeft="68dp"
+                    android:layout_marginTop="-30dp"
+                    android:text=" 15/02/1992"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="5px"
+                    android:layout_marginTop="-7dp"
+                    android:background="@drawable/proline"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#f24a47"
+                    android:textColor="#f24a47"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#ffffff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Stream :- "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#f24a47"
+                    android:textColor="#f24a47"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#ffffff"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="-30dp"
+                    android:text=" Aman Handa"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="5px"
+                    android:layout_marginTop="-7dp"
+                    android:background="@drawable/proline"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#f24a47"
+                    android:textColor="#f24a47"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#ffffff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="C.code :- "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#f24a47"
+                    android:textColor="#f24a47"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#ffffff"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="-30dp"
+                    android:text=" 123454"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="5px"
+                    android:layout_marginTop="-7dp"
+                    android:background="@drawable/proline"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#f24a47"
+                    android:textColor="#f24a47"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#ffffff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="P.Name :- "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#f24a47"
+                    android:textColor="#f24a47"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#ffffff"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="-30dp"
+                    android:text=" Aman Handa"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="5px"
+                    android:layout_marginTop="-7dp"
+                    android:background="@drawable/proline"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </ScrollView>
+</LinearLayout>

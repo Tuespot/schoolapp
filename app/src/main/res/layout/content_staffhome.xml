@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tuesport"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.tuespot.roundedcorner.Staffhome"
+    tools:showIn="@layout/app_bar_staffhome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#0079c1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="EDUCATION IS THE POWERFUL WEAPON"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="NATIONAL BOARD OF SCHOOL EDUCATION"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="INDIA"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/currentuser" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <LinearLayout android:layout_weight="0.50"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout android:layout_weight="0.33"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/staffresult"
+                android:background="#ff4f81"
+                android:orientation="vertical">
+                <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="60dp"
+                    android:id="@+id/statusi"
+                    android:layout_gravity="center"
+                    android:background="@drawable/education"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#ffffff"
+                    android:text="Download Result"/>
+
+
+            </LinearLayout>
+            <LinearLayout android:layout_weight="0.33"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/viewadmission"
+                android:background="#2dde98"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="60dp"
+
+                    android:layout_gravity="center"
+                    android:background="@drawable/education"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#ffffff"
+                    android:text="View Admission"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout android:layout_weight="0.50"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout android:layout_weight="0.33"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#ffc168"
+                android:id="@+id/result2"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="60dp"
+                    android:id="@+id/statusi4"
+                    android:layout_gravity="center"
+                    android:background="@drawable/education"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#ffffff"
+                    android:text="Generate Verification"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_weight="0.33"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/generatepayment"
+                android:background="#8e43e7"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="60dp"
+                    android:id="@+id/statusi5"
+                    android:layout_gravity="center"
+                    android:background="@drawable/education"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#ffffff"
+                    android:text="Generate Payment "/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

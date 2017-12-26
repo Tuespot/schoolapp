@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tuespot.roundedcorner.Generatepayment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:layout_margin="20dp"
+        android:textSize="35dp"
+        android:text="Generate Payment"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:hint="Enter Name"
+        android:backgroundTint="#000000"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:ems="10"
+        android:id="@+id/gpname"
+        android:layout_gravity="center_horizontal" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:hint="Enter Center Code"
+        android:backgroundTint="#000000"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:ems="10"
+        android:id="@+id/gpcode"
+        android:layout_gravity="center_horizontal" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:hint="Enter Mobile Number"
+        android:backgroundTint="#000000"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:ems="10"
+        android:id="@+id/gpmobile"
+        android:layout_gravity="center_horizontal" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="textPostalAddress"
+        android:textAlignment="center"
+        android:hint="Enter Address"
+
+        android:textColorHint="#000000"
+        android:background="@drawable/boader_massage"
+        android:textColor="#000000"
+        android:ems="10"
+        android:id="@+id/gpaddress"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="CONTINUE"
+        android:layout_marginTop="10dp"
+        android:id="@+id/continu"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:background="@drawable/rounded_cornerr"/>
+
+</LinearLayout>
