@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+
     Button continu;
 
     @Override
@@ -15,13 +16,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         continu = (Button)findViewById(R.id.continu);
-
         continu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, Mainlogin.class);
                 startActivity(i);
-
             }
         });
 

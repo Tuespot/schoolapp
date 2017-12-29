@@ -24,7 +24,7 @@ import java.util.Map;
 public class Stafflogin extends AppCompatActivity {
 
     //Defining views
-    private EditText staffmobile,staffpassword;
+    private EditText staffid,staffpassword;
 
 
 
@@ -37,7 +37,7 @@ public class Stafflogin extends AppCompatActivity {
 
 
     Button loginstaff;
-   // registerstaff;
+    // registerstaff;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +57,7 @@ public class Stafflogin extends AppCompatActivity {
 */
 
         //Initializing views
-        staffmobile = (EditText) findViewById(R.id.staffmobile);
+        staffid = (EditText) findViewById(R.id.staffmobile);
         staffpassword = (EditText) findViewById(R.id.staffpassword);
 
         loginstaff = (Button) findViewById(R.id.loginstaff);
@@ -90,9 +90,9 @@ public class Stafflogin extends AppCompatActivity {
 
     private void login() {
         //Getting values from edit texts
-        final String staff_mobile = staffmobile.getText().toString().trim();
-       // final String student_roll = studentmobile.getText().toString().trim();
-        final String staff_password = staffpassword.getText().toString().trim();
+        //final String sstaff_mobile = staffmobile.getText().toString().trim();
+        final String sstaff_id = staffid.getText().toString().trim();
+        final String sstaff_password = staffpassword.getText().toString().trim();
 
         //Creating a string request
         StringRequest stringRequest = new StringRequest(Request.Method.POST, Config.LOGIN_URL,
@@ -109,8 +109,8 @@ public class Stafflogin extends AppCompatActivity {
 
                             //Adding values to editor
                             editor.putBoolean(Config.LOGGEDIN_SHARED_PREF, true);
-                            editor.putString(Config.EMAIL_SHARED_PREF, staff_mobile);
-                            editor.putString(Config.EMAIL_SHARED_PREF, staff_password);
+                            editor.putString(Config.EMAIL_SHARED_PREF, sstaff_id);
+                            editor.putString(Config.EMAIL_SHARED_PREF, sstaff_password);
 
                             //Saving values to editor
                             editor.commit();
@@ -135,9 +135,9 @@ public class Stafflogin extends AppCompatActivity {
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
                 //Adding parameters to request
-                params.put(Config.KEY_MOBILENUMBER,staff_mobile);
-               // params.put(Config.KEY_ROLLNO,student_roll);
-                params.put(Config.KEY_PASSWORD,staff_password);
+                // params.put(Config.KEY_MOBILENUMBER,sstaff_mobile);
+                params.put(Config.KEY_STAFF_ID,sstaff_id);
+                params.put(Config.KEY_STAFF_PASSWORD,sstaff_password);
 
                 //returning parameter
                 return params;

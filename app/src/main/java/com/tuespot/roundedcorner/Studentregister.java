@@ -108,7 +108,7 @@ public class Studentregister extends AppCompatActivity {
         clickstudent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Studentregister.this, Studentlogin.class);
+                Intent i = new Intent(Studentregister.this, MainActivity.Studentlogin.class);
                 startActivity(i);
 
             }

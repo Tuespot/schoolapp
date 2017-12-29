@@ -6,13 +6,20 @@ package com.tuespot.roundedcorner;
 public class Config {
 
     //URL to our login.php file
-    public static final String LOGIN_URL = "http://tuespotsolutions.com/aman/studentlogin.php";
+    public static final String LOGIN_URL = "http://nbse.funcofi.com/staff/app/stafflogin.php";
+
+   // public static final String LOGIN_URL = "http://handa.16mb.com/stafflogin.php";
 
 
     //Keys for email and password as defined in our $_POST['key'] in login.php
-    public static final String KEY_MOBILENUMBER="student_mobile";
+
+    // student login
     public  static final String KEY_ROLLNO="student_roll";
-    public static final String KEY_PASSWORD ="student_password";
+    public static final String KEY_NAME ="student_password";
+    public static final String KEY_DOB="student_mobile";
+    // staff login
+    public  static final String KEY_STAFF_ID="userid";
+    public static final String KEY_STAFF_PASSWORD ="password";
 
     //If server response is equal to this that means login is successful
     public static final String LOGIN_SUCCESS = "success";

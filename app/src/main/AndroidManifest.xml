@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Mainlogin" />
-        <activity android:name=".Studentlogin" />
+        <activity android:name=".MainActivity$Studentlogin" />
         <activity android:name=".Stafflogin" />
         <activity android:name=".Studentregister" />
         <activity android:name=".Staffregister" />

@@ -30,7 +30,7 @@
         android:background="@drawable/background"
         android:orientation="horizontal">
 
-        <LinearLayout android:layout_weight="0.20"
+        <LinearLayout android:layout_weight="0.50"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -38,7 +38,7 @@
                android:layout_width="170dp"
                android:layout_height="50dp"
                android:text="INDIA"
-              android:padding="7dp"
+                 android:padding="7dp"
                android:textColor="#ffffff"
                android:layout_marginTop="10dp"
                android:gravity="center"
@@ -93,7 +93,7 @@
 
             </LinearLayout>
 
-        <LinearLayout android:layout_weight="0.20"
+        <LinearLayout android:layout_weight="0.50"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -169,6 +169,7 @@
         android:layout_gravity="center"
         android:text="CONTINUE"
         android:id="@+id/continu"
+        android:layout_marginTop="5dp"
         android:textColor="#ffffff"
         android:textSize="25dp"
         android:background="@drawable/rounded_cornerr"/>
