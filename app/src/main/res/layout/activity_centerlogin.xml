@@ -41,7 +41,7 @@
             android:textColorHint="#f24e4c"
             android:textColor="#f24e4c"
             android:ems="10"
-            android:id="@+id/mobilecenter"
+            android:id="@+id/centerid"
             android:layout_gravity="center_horizontal" />
 
 </android.support.design.widget.TextInputLayout>
@@ -63,7 +63,7 @@
             android:textColorHint="#f24e4c"
             android:hint="Enter Password"
             android:ems="10"
-            android:id="@+id/passwordcenter"
+            android:id="@+id/centerpassword"
             android:layout_gravity="center_horizontal" />
 
         </android.support.design.widget.TextInputLayout>

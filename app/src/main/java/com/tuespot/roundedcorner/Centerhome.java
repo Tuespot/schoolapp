@@ -24,15 +24,19 @@ public class Centerhome extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     //Textview to show currently logged in user
-    private TextView currentuserView;
+    private TextView centeruserView;
+
     LinearLayout download,download2,download3,download4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_centerhome);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
 
 
         download = (LinearLayout) findViewById(R.id.result);
@@ -75,15 +79,18 @@ public class Centerhome extends AppCompatActivity
 
 
 
-//Initializing textview
-        currentuserView = (TextView) findViewById(R.id.currentuser);
 
         //Fetching email from shared preferences
-        SharedPreferences sharedPreferences = getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
-        String email = sharedPreferences.getString(Config.EMAIL_SHARED_PREF,"Not Available");
+        SharedPreferences sharedPreferences = getSharedPreferences(Config.SHARED_PREF_CENTER_NAME, Context.MODE_PRIVATE);
+        String email = sharedPreferences.getString(Config.SHARED_PREF_CENTER_EMAIL,"Not Available");
 
-        //Showing the current logged in email to textview
-        // currentuserView.setText("Current User: " + email);
+        //NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+
+       // nav_user = (TextView)hView.findViewById(R.id.nav_name);
+       // nav_user.setText(user);
+
+//Initializing textview
+
 
 
     DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -96,7 +103,14 @@ public class Centerhome extends AppCompatActivity
     navigationView.setNavigationItemSelectedListener(this);
     // ATTENTION: This was auto-generated to implement the App Indexing API.
     // See https://g.co/AppIndexing/AndroidStudio for more information.
-}
+
+        View hView =  navigationView.getHeaderView(0);
+        centeruserView = (TextView)hView.findViewById(R.id.centeruserview);
+
+        //Showing the current logged in email to textview
+        centeruserView.setText("Current User: " +email);
+       }
+
 
     @Override
     public void onBackPressed() {
@@ -143,7 +157,7 @@ public class Centerhome extends AppCompatActivity
 
         } else if (id == R.id.nav_share) {
 
-        } else if (id == R.id.nav_Logout) {
+        } else if (id == R.id.center_Logout) {
             logout(); }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -159,15 +173,15 @@ public class Centerhome extends AppCompatActivity
                     @Override
                     public void onClick(DialogInterface arg0, int arg1) {
                         //Getting out sharedpreferences
-                        SharedPreferences preferences = getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
+                        SharedPreferences preferences = getSharedPreferences(Config.SHARED_PREF_CENTER_NAME, Context.MODE_PRIVATE);
                         //Getting editor
                         SharedPreferences.Editor editor = preferences.edit();
 
                         //Puting the value false for loggedin
-                        editor.putBoolean(Config.LOGGEDIN_SHARED_PREF, false);
+                        editor.putBoolean(Config.SHARED_PREF_CENTER_LOGGEDIN, false);
 
                         //Putting blank value to email
-                        editor.putString(Config.EMAIL_SHARED_PREF, "");
+                        editor.putString(Config.SHARED_PREF_CENTER_EMAIL, "");
 
                         //Saving the sharedpreferences
                         editor.commit();

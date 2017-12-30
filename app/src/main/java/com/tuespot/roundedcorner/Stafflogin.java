@@ -75,10 +75,10 @@ public class Stafflogin extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         //In onresume fetching value from sharedpreference
-        SharedPreferences sharedPreferences = getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getSharedPreferences(Config.SHARED_PREF_STAFF_NAME, Context.MODE_PRIVATE);
 
         //Fetching the boolean value form sharedpreferences
-        loggedIn = sharedPreferences.getBoolean(Config.LOGGEDIN_SHARED_PREF, false);
+        loggedIn = sharedPreferences.getBoolean(Config.SHARED_PREF_STAFF_LOGGEDIN, false);
 
         //If we will get true
         if (loggedIn) {
@@ -100,17 +100,17 @@ public class Stafflogin extends AppCompatActivity {
                     @Override
                     public void onResponse(String response) {
                         //If we are getting success from server
-                        if (response.equalsIgnoreCase(Config.LOGIN_SUCCESS)) {
+                        if (response.equalsIgnoreCase(Config.LOGIN_STAFF_SUCCESS)) {
                             //Creating a shared preference
-                            SharedPreferences sharedPreferences = Stafflogin.this.getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
+                            SharedPreferences sharedPreferences = Stafflogin.this.getSharedPreferences(Config.SHARED_PREF_STAFF_NAME, Context.MODE_PRIVATE);
 
                             //Creating editor to store values to shared preferences
                             SharedPreferences.Editor editor = sharedPreferences.edit();
 
                             //Adding values to editor
-                            editor.putBoolean(Config.LOGGEDIN_SHARED_PREF, true);
-                            editor.putString(Config.EMAIL_SHARED_PREF, sstaff_id);
-                            editor.putString(Config.EMAIL_SHARED_PREF, sstaff_password);
+                            editor.putBoolean(Config.SHARED_PREF_STAFF_LOGGEDIN, true);
+                            editor.putString(Config.SHARED_PREF_STUDENT_EMAIL, sstaff_id);
+                            editor.putString(Config.SHARED_PREF_STUDENT_EMAIL, sstaff_password);
 
                             //Saving values to editor
                             editor.commit();

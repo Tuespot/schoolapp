@@ -40,7 +40,8 @@
         <activity android:name=".Staffresult" />
         <activity android:name=".Generatepayment" />
         <activity android:name=".Viewadmission" />
-        <activity android:name=".Viewadmissionstudent"></activity>
+        <activity android:name=".Viewadmissionstudent" />
+        <activity android:name=".Studentlogin"></activity>
     </application>
 
 </manifest>

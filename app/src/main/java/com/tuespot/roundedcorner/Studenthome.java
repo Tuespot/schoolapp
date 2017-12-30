@@ -41,6 +41,7 @@ public class Studenthome extends AppCompatActivity
 
 //Initializing textview
         currentuserView = (TextView) findViewById(R.id.currentuser);
+
         download = (LinearLayout) findViewById(R.id.result);
         download2 = (LinearLayout) findViewById(R.id.result2);
         download3 = (LinearLayout) findViewById(R.id.result3);
@@ -97,9 +98,10 @@ public class Studenthome extends AppCompatActivity
 
             }
         });
+
         //Fetching email from shared preferences
-        SharedPreferences sharedPreferences = getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
-        String email = sharedPreferences.getString(Config.EMAIL_SHARED_PREF,"Not Available");
+        SharedPreferences sharedPreferences = getSharedPreferences(Config.SHARED_PREF_STUDENT_NAME, Context.MODE_PRIVATE);
+        String email = sharedPreferences.getString(Config.SHARED_PREF_STUDENT_EMAIL,"Not Available");
 
         //Showing the current logged in email to textview
         // currentuserView.setText("Current User: " + email);
@@ -162,7 +164,7 @@ public class Studenthome extends AppCompatActivity
 
         } else if (id == R.id.nav_share) {
 
-        } else if (id == R.id.nav_Logout) {
+        } else if (id == R.id.student_Logout) {
             logout(); }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -178,15 +180,15 @@ public class Studenthome extends AppCompatActivity
                     @Override
                     public void onClick(DialogInterface arg0, int arg1) {
                         //Getting out sharedpreferences
-                        SharedPreferences preferences = getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
+                        SharedPreferences preferences = getSharedPreferences(Config.SHARED_PREF_STUDENT_NAME, Context.MODE_PRIVATE);
                         //Getting editor
                         SharedPreferences.Editor editor = preferences.edit();
 
                         //Puting the value false for loggedin
-                        editor.putBoolean(Config.LOGGEDIN_SHARED_PREF, false);
+                        editor.putBoolean(Config.SHARED_PREF_STUDENT_LOGGEDIN, false);
 
                         //Putting blank value to email
-                        editor.putString(Config.EMAIL_SHARED_PREF, "");
+                        editor.putString(Config.SHARED_PREF_STUDENT_EMAIL, "");
 
                         //Saving the sharedpreferences
                         editor.commit();
