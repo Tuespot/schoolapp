@@ -89,7 +89,7 @@ public class Centerhome extends AppCompatActivity
        // nav_user = (TextView)hView.findViewById(R.id.nav_name);
        // nav_user.setText(user);
 
-//Initializing textview
+
 
 
 
@@ -104,7 +104,9 @@ public class Centerhome extends AppCompatActivity
     // ATTENTION: This was auto-generated to implement the App Indexing API.
     // See https://g.co/AppIndexing/AndroidStudio for more information.
 
-        View hView =  navigationView.getHeaderView(0);
+
+            //Initializing textview
+         View hView =  navigationView.getHeaderView(0);
         centeruserView = (TextView)hView.findViewById(R.id.centeruserview);
 
         //Showing the current logged in email to textview

@@ -112,7 +112,7 @@ public  class Studentlogin extends AppCompatActivity {
                             //Adding values to editor
                             editor.putBoolean(Config.SHARED_PREF_STUDENT_LOGGEDIN, true);
                             editor.putString(Config.SHARED_PREF_STUDENT_EMAIL, Sstudent_roll);
-                            editor.putString(Config.SHARED_PREF_STUDENT_EMAIL, Sstudent_name);
+                            editor.putString(Config.SHARED_PREF_STUDENT_NAMEVIEW, Sstudent_name);
                             editor.putString(Config.SHARED_PREF_STUDENT_EMAIL, Sstudent_dod);
 
                             //Saving values to editor3.0

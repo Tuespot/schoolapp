@@ -26,7 +26,7 @@ public class Studenthome extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     //Textview to show currently logged in user
-    private TextView currentuserView;
+    private TextView studentrollView,studentnameView;
     LinearLayout download,download2,download3,download4,enquiry,download6;
 
     @Override
@@ -39,8 +39,6 @@ public class Studenthome extends AppCompatActivity
 
 
 
-//Initializing textview
-        currentuserView = (TextView) findViewById(R.id.currentuser);
 
         download = (LinearLayout) findViewById(R.id.result);
         download2 = (LinearLayout) findViewById(R.id.result2);
@@ -101,7 +99,9 @@ public class Studenthome extends AppCompatActivity
 
         //Fetching email from shared preferences
         SharedPreferences sharedPreferences = getSharedPreferences(Config.SHARED_PREF_STUDENT_NAME, Context.MODE_PRIVATE);
+
         String email = sharedPreferences.getString(Config.SHARED_PREF_STUDENT_EMAIL,"Not Available");
+        String name = sharedPreferences.getString(Config.SHARED_PREF_STUDENT_NAMEVIEW,"Not Available");
 
         //Showing the current logged in email to textview
         // currentuserView.setText("Current User: " + email);
@@ -117,6 +117,17 @@ public class Studenthome extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
+
+
+        //Initializing textview
+        View hView =  navigationView.getHeaderView(0);
+        studentrollView = (TextView)hView.findViewById(R.id.studentrollview);
+              studentnameView = (TextView)hView.findViewById(R.id.studentnameview);
+
+        //Showing the current logged in email to textview
+        studentrollView.setText("Current User: " +email);
+        studentnameView.setText("User Name: " +name);
+
     }
 
     @Override
@@ -189,6 +200,7 @@ public class Studenthome extends AppCompatActivity
 
                         //Putting blank value to email
                         editor.putString(Config.SHARED_PREF_STUDENT_EMAIL, "");
+                        //editor.putString(Config.SHARED_PREF_STUDENT_NAMEVIEW, "");
 
                         //Saving the sharedpreferences
                         editor.commit();

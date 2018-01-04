@@ -24,7 +24,7 @@ public class Staffhome extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     //Textview to show currently logged in user
-    private TextView currentuserView;
+    private TextView staffidView;
     LinearLayout staffresult,download2,viewadmission,generatepayment;
 
     @Override
@@ -35,8 +35,7 @@ public class Staffhome extends AppCompatActivity
         setSupportActionBar(toolbar);
 
 
-//Initializing textview
-        currentuserView = (TextView) findViewById(R.id.currentuser);
+
         staffresult = (LinearLayout) findViewById(R.id.staffresult);
         download2 = (LinearLayout) findViewById(R.id.result2);
         viewadmission = (LinearLayout) findViewById(R.id.viewadmission);
@@ -81,9 +80,6 @@ public class Staffhome extends AppCompatActivity
         SharedPreferences sharedPreferences = getSharedPreferences(Config.SHARED_PREF_STAFF_NAME, Context.MODE_PRIVATE);
         String email = sharedPreferences.getString(Config.SHARED_PREF_STAFF_EMAIL,"Not Available");
 
-        //Showing the current logged in email to textview
-        // currentuserView.setText("Current User: " + email);
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -95,6 +91,15 @@ public class Staffhome extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
+
+
+        //Initializing textview
+        View hView =  navigationView.getHeaderView(0);
+        staffidView = (TextView)hView.findViewById(R.id.staffidview);
+
+        //Showing the current logged in email to textview
+        staffidView.setText("Current User: " +email);
+
     }
 
     @Override

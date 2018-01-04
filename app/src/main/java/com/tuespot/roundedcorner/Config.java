@@ -27,6 +27,7 @@ public class Config {
     public static final String SHARED_PREF_STUDENT_NAME = "student_myloginapp";
     //This would be used to store the email of current logged in user
     public static final String SHARED_PREF_STUDENT_EMAIL = "student_e_mail";
+    public static final String SHARED_PREF_STUDENT_NAMEVIEW = "student_name";
     //We will use this to store the boolean in sharedpreference to track user is loggedin or not
     public static final String SHARED_PREF_STUDENT_LOGGEDIN = "student_loggedin";
 

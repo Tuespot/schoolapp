@@ -33,9 +33,6 @@ public class Stafflogin extends AppCompatActivity {
     private boolean loggedIn = false;
 
 
-
-
-
     Button loginstaff;
     // registerstaff;
 
@@ -109,8 +106,8 @@ public class Stafflogin extends AppCompatActivity {
 
                             //Adding values to editor
                             editor.putBoolean(Config.SHARED_PREF_STAFF_LOGGEDIN, true);
-                            editor.putString(Config.SHARED_PREF_STUDENT_EMAIL, sstaff_id);
-                            editor.putString(Config.SHARED_PREF_STUDENT_EMAIL, sstaff_password);
+                            editor.putString(Config.SHARED_PREF_STAFF_EMAIL, sstaff_id);
+                            editor.putString(Config.SHARED_PREF_STAFF_EMAIL, sstaff_password);
 
                             //Saving values to editor
                             editor.commit();
@@ -147,11 +144,6 @@ public class Stafflogin extends AppCompatActivity {
         //Adding the string request to the queue
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
-
-
-
-
-
 
 
     }
